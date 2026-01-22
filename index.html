@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliniconic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .btn {
+      background: #ffcc00;
+      color: #333;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-left: 20px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #e6b800;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #e6f2ff, #cce0ff);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #0066cc;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* Info block sections */
+    .info-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 30px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .info-block.alt {
+      background: #f0f8ff;
+    }
+
+    .info-block .text {
+      flex: 1 1 50%;
+      padding: 20px;
+    }
+
+    .info-block .image {
+      flex: 1 1 40%;
+      text-align: center;
+    }
+
+    .info-block img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+      nav a, .btn {
+        margin: 10px 0;
+      }
+      .info-block {
+        flex-direction: column;
+      }
+      .info-block .text, .info-block .image {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cliniconic</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <button class="btn">Login</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Cliniconic</h2>
+    <p>Your trusted platform for healthcare solutions.</p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- IoT Integration Section -->
+  <section class="info-block">
+    <div class="text">
+      <h3>Synchronizing dental care through IoT integration</h3>
+      <p>CLINICONIC bridges the gap between patient devices and chairside displays with millisecond precision. Real-time data synchronization eliminates the chaos of scattered systems and transforms how clinics deliver care.</p>
+      <button class="btn">Demo</button>
+      <button class="btn">Details</button>
+    </div>
+    <div class="image">
+      <img src="your-image-path-1.png" alt="Dental tools and IoT integration">
+    </div>
+  </section>
+
+  <!-- Core Framework Section -->
+  <section class="info-block alt">
+    <div class="text">
+      <h3>Core framework engineered for clinical precision</h3>
+      <p>CLINICONIC runs on four technical pillars that keep your clinic moving without friction. Each component was built to handle the demands of real dental work, where milliseconds matter and reliability isn't optional.</p>
+      <button class="btn">Explore</button>
+      <button class="btn">Learn</button>
+    </div>
+    <div class="image">
+      <img src="your-image-path-2.png" alt="Dental clinic reception area">
+    </div>
+  </section>
+
+  <!-- Data Flow System Section -->
+  <section class="info-block">
+    <div class="text">
+      <h3>System: Data moves through four stages</h3>
+      <p><strong>Input:</strong> Mobile app triggers the flow. Staff update patient status instantly from anywhere.</p>
+      <p><strong>Cloud:</strong> Firebase processes and broadcasts data. Secure storage meets millisecond synchronization.</p>
+      <p><strong>Processing:</strong> Raspberry Pi determines what displays where. Python logic routes data to monitors.</p>
+      <button class="btn">Expand</button>
+    </div>
+    <div class="image">
+      <img src="your-image-path-3.png" alt="Data flow system diagram">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Cliniconic. All rights reserved.</p>
+    <div>
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a> | 
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
